@@ -1,0 +1,11 @@
+.header {
+  padding: 3rem 0;
+  background: $theme-color;
+  font-size: $font-size-large;
+  color: $secondary-color;
+	a {
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+	}
+}

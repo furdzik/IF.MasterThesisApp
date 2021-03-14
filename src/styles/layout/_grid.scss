@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  max-width: $container-width;
+}
+
+// Basic grid
+// The repo uses flex so be flexible! 
+.box {
+  //@include media("<=small") {
+  //    display: block;
+  //}
+  //@include media(">small") {
+  //    display: flex;
+  //    flex-flow: row nowrap;
+  //}
+  @include media-breakpoint-up(landscapePhone) {
+    max-width: $container-width;
+  }
+  .item {
+    padding: 0 $gutter;
+  }
+}
