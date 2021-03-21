@@ -51,16 +51,15 @@ const config = {
           }),
         new MiniCssExtractPlugin({
             filename: 'styles/[name].css',
-          })
-          // new CopyWebpackPlugin([
-          //   {
-          //     from: path.resolve(__dirname, 'src', 'images'),
-          //     to: path.resolve(__dirname, 'build', 'images'),
-          //     toType: 'dir',
-          //   },
-          // ])
+          }),
+        new CopyWebpackPlugin([
+          {
+            from: path.resolve(__dirname, 'src', 'assets'),
+            to: path.resolve(__dirname, 'build', 'assets'),
+            toType: 'dir',
+          },
+        ])
       ]
-    
 };
 
 module.exports = config;

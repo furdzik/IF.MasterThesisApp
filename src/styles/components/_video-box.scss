@@ -1,9 +1,31 @@
 .video-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10rem;
   margin-top: 2rem;
   border: 1rem solid $silver;
   border-radius: .6rem;
+}
+
+.video-play {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: $primary-color;
+  cursor: pointer;
+  &::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: 1rem;
+    border-width: 2.5rem 0 2.5rem 4.5rem;
+    border-style: solid;
+    border-color: transparent $white;
+  }
 }
