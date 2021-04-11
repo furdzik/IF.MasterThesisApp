@@ -4,8 +4,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 1rem solid $silver;
   border-radius: .6rem;
+
+  video {
+    width: 100%;
+  }
 }
 
 .video-play {

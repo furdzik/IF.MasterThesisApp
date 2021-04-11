@@ -1,7 +1,11 @@
+$padding: 1.5rem;
+
 .container {
   margin: 0 auto;
-  max-width: $container-width;
+  max-width: $container-width + 2 * $padding;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   &.wide {
-    max-width: $container-width-wide;
+    max-width: $container-width-wide + 2 * $padding;
   }
 }
