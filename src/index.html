@@ -1,38 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Izabela Furdzik - Praca magisterska</title>
-</head>
-<body class="root">
-<header class="header">
-  <div class="container wide">
-    <a href="/">Izabela Furdzik - Praca magisterska</a>
-  </div>
-</header>
-<div class="main">
-  <div class="container wide">
-    <div id="video-box" class="video-box">
-      <video id="video" width="1300">
-        Twoja przeglądatka nie wspiera elementu &lt;video&gt;, do odtwarzania filmów.
-        <source src="assets/movie.mp4" />
-      </video>
-      <div class="video-play" id="video-play"></div>
-    </div>
-  </div>
-  <div class="container">
-    <div id="form" class="form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFA072NToWFVhCYAQdNpCpeykkSAKNUJFUlwNWn0wrnYpMLw/viewform?embedded=true" width="1000" height="872" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <div>
-        <p>Copyright © 2021 IZABELA FURDZIK</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="root">
+    <header class="header">
+      <div class="container wide">
+        <a href="/">Izabela Furdzik - Praca magisterska</a>
       </div>
+    </header>
+    <div class="main">
+      <div class="container wide">
+        <div id="video-box" class="video-box">
+          <video id="video" width="1300">
+            Twoja przeglądatka nie wspiera elementu &lt;video&gt;, do
+            odtwarzania filmów.
+            <source src="assets/movie.mp4" />
+          </video>
+          <div class="video-play" id="video-play"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="form" class="form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScFA072NToWFVhCYAQdNpCpeykkSAKNUJFUlwNWn0wrnYpMLw/viewform?embedded=true"
+            width="1000"
+            height="872"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div>
+            <p>Copyright © 2021 IZABELA FURDZIK</p>
+          </div>
+        </div>
+      </footer>
     </div>
-  </footer>
-</div>
-</body>
+    <script src="/bundle.js"></script>
+  </body>
 </html>
